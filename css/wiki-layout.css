@@ -6,15 +6,15 @@ body {
 }
 
 /* 개별 이미지 지정 */
-.image1 { background-image: url('/images/bowling.jpeg'); }
-.image2 { background-image: url('/images/daegu.jpeg'); }
-.image3 { background-image: url('/images/edu.jpeg'); }
-.image4 { background-image: url('/images/family.jpeg'); }
-.image5 { background-image: url('/images/gang.jpeg'); }
-.image6 { background-image: url('/images/gundea.jpeg'); }
-.image7 { background-image: url('/images/jeju.jpeg'); }
-.image8 { background-image: url('/images/nigth-race.jpeg'); }
-.image9 { background-image: url('/images/wootehco.jpeg'); }
+.image1 { background-image: url('../images/bowling.jpeg'); }
+.image2 { background-image: url('../images/daegu.jpeg'); }
+.image3 { background-image: url('../images/edu.jpeg'); }
+.image4 { background-image: url('../images/family.jpeg'); }
+.image5 { background-image: url('../images/gang.jpeg'); }
+.image6 { background-image: url('../images/gundea.jpeg'); }
+.image7 { background-image: url('../images/jeju.jpeg'); }
+.image8 { background-image: url('../images/nigth-race.jpeg'); }
+.image9 { background-image: url('../images/wootehco.jpeg'); }
 
 
 .container {
