@@ -51,15 +51,16 @@ body {
   background-position: center; /* 이미지 중앙 정렬 */
 }
 
-/* 댓글 입력창 박스 스타일 */
 .comment-box {
   display: flex;
   align-items: center;
-  width: 600px;  /* 원하는 너비 조절 */
+  width: 100%; /* 부모 요소에 맞춰 가로 길이 자동 조절 */
+  max-width: 800px; /* 최대 너비 제한 (원하는 크기로 조정 가능) */
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 12rpx;
+  border-radius: 12px; /* 'rpx' 오타 수정 */
   background-color: white;
+  box-sizing: border-box; /* padding이 width에 포함되도록 설정 */
 }
 
 .comment-author {
@@ -94,27 +95,25 @@ body {
   background: transparent;
 }
 
-/* 버튼 공통 스타일 */
 .cancel-btn, .submit-btn {
   border: none;
   font-size: 14px;
   cursor: pointer;
   padding: 6px 12px;
   margin-left: 5px;
+  background-color: #e6f9f8; /* 배경색을 동일하게 */
+  color: black; /* 글자 색상 동일 */
+  border-left: 1px solid #ccc; /* 경계선 동일 */
 }
 
 /* 취소 버튼 */
 .cancel-btn {
-  background-color: #eee;
-  color: black;
-  border-left: 1px solid #ccc;
+  background-color: #e6f9f8; /* 배경색을 등록 버튼과 동일하게 */
 }
 
 /* 등록 버튼 */
 .submit-btn {
-  background-color: #e6f9f8;
-  color: black;
-  border-left: 1px solid #ccc;
+  background-color: #e6f9f8; /* 배경색을 취소 버튼과 동일하게 */
 }
 
 h1,
