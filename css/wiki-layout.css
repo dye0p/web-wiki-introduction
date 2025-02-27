@@ -5,6 +5,118 @@ body {
   color: var(--font-default-color);
 }
 
+/* 개별 이미지 지정 */
+.image1 { background-image: url('/images/bowling.jpeg'); }
+.image2 { background-image: url('/images/daegu.jpeg'); }
+.image3 { background-image: url('/images/edu.jpeg'); }
+.image4 { background-image: url('/images/family.jpeg'); }
+.image5 { background-image: url('/images/gang.jpeg'); }
+.image6 { background-image: url('/images/gundea.jpeg'); }
+.image7 { background-image: url('/images/jeju.jpeg'); }
+.image8 { background-image: url('/images/nigth-race.jpeg'); }
+.image9 { background-image: url('/images/wootehco.jpeg'); }
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열 고정 */
+  grid-auto-rows: 1fr; /* 행 크기를 동일하게 설정 */
+  width: 100%; /* 화면 너비에 맞춤 */
+  max-width: 800px; /* 최대 크기 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  aspect-ratio: 1 / 1; /* 정사각형 형태 유지 */
+}
+
+.item {
+  width: 100%; /* 부모 크기에 맞게 채움 */
+  aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
+  background-size: cover; /* 이미지가 요소에 꽉 차도록 */
+  background-position: center; /* 이미지 중앙 정렬 */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열 고정 */
+  grid-auto-rows: 1fr; /* 행 크기를 동일하게 설정 */
+  width: 100%; /* 화면 너비에 맞춤 */
+  max-width: 800px; /* 최대 크기 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  aspect-ratio: 1 / 1; /* 정사각형 형태 유지 */
+}
+
+.item {
+  width: 100%; /* 부모 크기에 맞게 채움 */
+  aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
+  background-size: cover; /* 이미지가 요소에 꽉 차도록 */
+  background-position: center; /* 이미지 중앙 정렬 */
+}
+
+/* 댓글 입력창 박스 스타일 */
+.comment-box {
+  display: flex;
+  align-items: center;
+  width: 600px;  /* 원하는 너비 조절 */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 12rpx;
+  background-color: white;
+}
+
+.comment-author {
+  position: relative;
+  margin: 10px;
+  padding: 1px;
+}
+
+.comment-item {
+  border: 1px solid #ddd; /* 회색 테두리 */
+  margin: 8px;
+  padding: 15px; /* 내부 여백 */
+  border-radius: 12rpx; 
+  font-size: 14px;
+}
+
+/* 프로필 아이콘 */
+.profile-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* 입력 필드 */
+.comment-input {
+  flex: 1;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  padding: 6px;
+  background: transparent;
+}
+
+/* 버튼 공통 스타일 */
+.cancel-btn, .submit-btn {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin-left: 5px;
+}
+
+/* 취소 버튼 */
+.cancel-btn {
+  background-color: #eee;
+  color: black;
+  border-left: 1px solid #ccc;
+}
+
+/* 등록 버튼 */
+.submit-btn {
+  background-color: #e6f9f8;
+  color: black;
+  border-left: 1px solid #ccc;
+}
+
 h1,
 h2,
 h3,
@@ -67,6 +179,7 @@ section,
 article {
   display: flex;
   flex-flow: column;
+  margin: 10px;
 }
 
 div.thumbnail {
@@ -98,7 +211,7 @@ aside h2 {
 }
 
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("/images/profile.jpeg");
   background-size: 100%;
   background-position: center 100%;
   width: var(--aside-width);
